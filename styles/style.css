@@ -300,11 +300,26 @@ footer{
     width: 100%;
     
 }
-}
-
 .menu-box{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    margin: auto;
+    flex-direction: column;
     font-size: 4rem;
     padding: 0px;
 }
+}
+
+.menu-box{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    font-size: 4rem;
+    padding: 0px;
+
+}
+.menu-box img{
+    width: 100%;
+}
+
