@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap');
+
+
+/*================== reset ==================*/
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+    color: rgb(46, 45, 45);
+     
+}
+
+a:hover{
+    color: var(--branco-amarelado);
+    transition: 1s;
+}
+
+
+
+/*================== VARIABLES ==================*/
+:root{
+    font-size: 62.5%;
+    --brown: #8C4B37;
+    --green: #D0D269;
+    --branco-amarelado: rgb(255, 242, 221);
+}
+
+body{
+    
+    background-color: #9a9c1b;;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: auto;
+    
+    
+}
+
+ /*================== LAYOUT ==================*/
+h1{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    -webkit-font-smoothing: auto;
+  
+}
+
+p{
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    -webkit-font-smoothing: auto;
+}
+
+nav{
+    
+    background-color: transparent;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5%;
+    font-size: 3.5rem;
+    margin: auto;
+    width: 100%;
+    background-color: #D0D269;
+    padding: 10px;
+ 
+    border: 3px solid black;
+}
+    
+   
+
+
+
+header a h1{
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 1px;
+    border: 5px solid black;
+    
+}
+
+nav ul {
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+nav ul li{
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 2.5rem;
+}
+
+nav a{
+    padding: 5px;
+}
+
+.block{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 2.3rem;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    
+    
+    
+}
+
+.blocktext{
+    margin-top: 10%;
+    align-items: center; 
+    
+    padding: 20px;
+    line-height: 3rem;
+       
+}
+
+
+
+.block h1{
+    color: #9a9c1b;
+    padding: 20px;
+    line-height: 5rem;
+    
+    
+}
+
+.blockimg{
+    object-fit: cover;
+    object-position: bottom;
+    
+    width: 100%;
+    opacity: 1;
+    
+       
+}
+.blockimg img{
+    
+    width: 100%;
+    height: 100%;
+       
+}
+#logo-vegan{
+  width: 20vw;
+  
+}
+
+#box0{
+    
+    color: rgb(255, 242, 221);
+    background-color: #8c4b37;
+    
+}
+#box1{
+    color: black;
+    background-color: #9a9c1b;
+}
+
+#box1 h1{
+    color: #000;
+}
+
+#box2{
+    background-color: #8c4b37;
+    color: var(--branco-amarelado);
+}
+#box3{
+    background-color: #9a9c1b;
+        
+}
+
+#box3 .blockimg img{
+    width: 100%;
+}
+#leafs{
+    width: 10vw;
+}
+
+
+.reservation{
+    
+    color: black;
+    background-color: #ffffc7a8;
+    margin: 10px auto;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    -webkit-font-smoothing: auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 8px solid #81500fa8;
+    
+        
+}
+
+
+ /*================== HOME ==================*/
+footer{
+    font-size: 2.0rem;
+    background-color: #8C4B37;
+    border-top: 5px  solid rgb(255, 242, 221);
+    border-bottom: 5px  solid rgb(255, 242, 221);
+    text-align: center;
+    color: var(--branco-amarelado);
+    padding: 15px;
+}
+
+
+
+
+
+ @media screen and (max-width:945px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-justify: center;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        text-justify: center;
+    }   
+    
+    .block{
+        flex-direction: column;
+        margin: auto;
+        padding: 0px;
+           
+    }
+    .blocktext{
+        margin: 0%;
+        
+    }
+    .block img{
+        width: 100%;
+    }
+
+    #box0{
+        flex-direction: column;
+        
+    }
+    
+    #box1{
+        flex-direction: column-reverse;
+    }
+    #box2{
+        
+       
+    }
+    #coffee{
+        width: 20vw;
+    }
+
+    #box3{
+                
+        flex-direction: column-reverse;
+       
+    }
+    #leafs{
+        width: 20vw;
+        padding: 10px;
+        
+    }
+    #box3 .blockimg img{
+        
+        
+    }
+
+    #logo-vegan{
+        width: 30vw;
+    }
+
+
+    .reservation{
+    
+        color: black;
+        background-color: #ffffc7a8;
+        margin: auto;
+        font-family: 'Big Shoulders Stencil Display', cursive;
+        -webkit-font-smoothing: auto;
+        padding: 0px;
+        border-radius: 5px;
+        border: 8px solid #81500fa8;
+        text-align: center;
+        width:  auto;
+        height: auto;
+            
+    }
+.reservation ul{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    width: 100%;
+    
+}
+}
+
+.menu-box{
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+    padding: 0px;
+}
