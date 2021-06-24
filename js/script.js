@@ -21,5 +21,5 @@ app.config(function($routeProvider) {
         })
        
        
-    .otherwise({ redirectTo: './template' })
+    .otherwise({ redirectTo: './template/home.html' })
 })
