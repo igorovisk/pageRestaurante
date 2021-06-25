@@ -45,6 +45,7 @@ body{
 h1{
     font-family: 'Big Shoulders Stencil Display', cursive;
     -webkit-font-smoothing: auto;
+    
   
 }
 
@@ -62,8 +63,9 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     height: 5%;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin: auto;
+    
     width: 100%;
     background-color: #D0D269;
     padding: 10px;
@@ -81,6 +83,7 @@ header a h1{
     border-radius: 10px;
     padding: 1px;
     border: 5px solid black;
+    
     
 }
 
@@ -116,10 +119,10 @@ nav a{
 }
 
 .blocktext{
-    margin-top: 10%;
+    margin-top: 2%;
     align-items: center; 
     
-    padding: 20px;
+    padding: 2em;
     line-height: 3rem;
        
 }
@@ -150,8 +153,12 @@ nav a{
        
 }
 #logo-vegan{
-  width: 20vw;
-  
+  width: 15vw;
+
+}
+
+#free-pesticide-icon{
+    width: 8vw;
 }
 
 #box0{
@@ -200,7 +207,6 @@ nav a{
         
 }
 
-
  /*================== HOME ==================*/
 footer{
     font-size: 2.0rem;
@@ -212,21 +218,23 @@ footer{
     padding: 15px;
 }
 
-
-
-
-
  @media screen and (max-width:945px) {
     nav{
         display: flex;
         flex-direction: column;
-        text-justify: center;
+        text-align: center;
+        padding: 10px;
     }
     nav ul{
         display: flex;
         flex-direction: column;
-        text-justify: center;
-    }   
+    }  
+    nav ul a{
+        padding: 5px;
+    }
+    nav ul li{
+        margin: 0;
+    }
     
     .block{
         flex-direction: column;
@@ -244,7 +252,7 @@ footer{
 
     #box0{
         flex-direction: column;
-        
+        margin-bottom: 100px;        
     }
     
     #box1{
@@ -277,6 +285,11 @@ footer{
         width: 30vw;
     }
 
+    #free-pesticide-icon{
+        width: 15vw;
+    }
+    
+
 
     .reservation{
     
@@ -300,26 +313,95 @@ footer{
     width: 100%;
     
 }
-.menu-box{
-    width: 100%;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    font-size: 4rem;
-    padding: 0px;
-}
 }
 
-.menu-box{
-    width: 100%;
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    font-size: 4rem;
-    padding: 0px;
+/* =====================================================  CSS MENU */
+
+.container-menu{
+    margin: 0;
+    padding: 1.5em;
+    background-color: #8c4b37;
+}
+
+
+
+.menu{
+    font-size: 1.2rem;
+}
+
+.menu-group-heading{
+    color: rgb(255, 255, 255);;
+    margin: 1em;
+    padding: 1em;
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-size: 1.5em;
 
 }
-.menu-box img{
-    width: 100%;
+.menu-group{
+    display: grid;
+    grid-template-columns: 1fr; /* pega o tamanho todo livre da div */
+    gap: 1.5em; /* espaço entre os itens do menu*/
+    padding: 1.5em;
 }
+
+.menu-item{
+    display: flex;
+}
+.menu-item-image{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+.menu-item-text h3{
+    color: #9a9c1b;
+}
+.menu-item-text{
+    color: rgb(255, 255, 255);
+    flex-grow: 1;
+}
+
+.menu-item-heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+.menu-item-name{
+    margin-right: 1.5em;
+}
+.menu-item-description{
+    text-align: justify;
+    line-height: 1.5em;
+    font-style: italic;
+}
+
+@media screen and (min-width: 992px){
+    .menu{
+        font-size: 1.8em;
+        
+        
+    }
+
+    .menu-group{
+        grid-template-columns: repeat(2, 1fr) /* 2 evenly sized columns */
+    }
+
+    .menu-item-image{
+        width: 250px;
+        height: 250px;
+        flex-shrink: 0;
+        object-fit: cover;
+        margin-right: 1.5em;
+        
+    }
+    .menu-item-description{
+        margin-top: 1em;
+        line-height: 1.6em;
+    
+}
+    
+
+
 
