@@ -332,7 +332,7 @@ footer{
 .menu-group-heading{
     color: rgb(255, 255, 255);;
     margin: 1em;
-    padding: 1em;
+    
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
     font-size: 1.5em;
@@ -342,7 +342,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr; /* pega o tamanho todo livre da div */
     gap: 1.5em; /* espaço entre os itens do menu*/
-    padding: 1.5em;
+    padding: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .menu-item{
@@ -373,7 +374,7 @@ footer{
 }
 .menu-item-description{
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-style: italic;
 }
 
