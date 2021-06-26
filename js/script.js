@@ -10,8 +10,8 @@ app.config(function($routeProvider) {
         .when("/menu", {
             templateUrl: "./template/menu.html"
         })
-        .when("/all-organic", {
-            templateUrl: "./template/all-organic.html"
+        .when("/organic", {
+            templateUrl: "./template/organic.html"
         })
         .when("/about-us", {
             templateUrl: "./template/about-us.html"
