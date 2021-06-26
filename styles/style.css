@@ -370,13 +370,16 @@ footer{
     margin: 0;
 }
 .menu-item-name{
+    width: 40%;
     margin-right: 1.5em;
+    
 }
 .menu-item-description{
     text-align: justify;
     line-height: 1.3em;
     font-style: italic;
 }
+
 
 @media screen and (min-width: 992px){
     .menu{
