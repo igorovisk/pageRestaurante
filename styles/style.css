@@ -440,7 +440,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin: 0px;
-    text-align: center;
+    text-align: center
     
 }
 
@@ -449,7 +449,7 @@ footer{
     width: 95%;
     height: auto;
     border: 10px solid rgba(255, 255, 255, 0.829);
-    
+    margin-bottom: 3%;
     
 }
 .organic-text{
