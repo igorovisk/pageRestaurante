@@ -421,7 +421,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin: 0;
-    background-color: var(--brown);
+    background-color: #752810ee;
     padding: 0;
     
 }
@@ -435,7 +435,7 @@ footer{
 
 .div-organic{
     
-    background-color: #752810ee;
+    background-color: #76300f;
     display: flex;
     flex-direction: column;
     margin: 0px;
